@@ -1,0 +1,116 @@
+*{
+    font-family:serif;
+    margin:0;
+    padding:0;
+    font-size:25px;
+}
+.sidebar_menu{
+    position:fixed;
+    left:-250px;    
+    top:20px;
+    height:100%;
+    width:250px;
+    line-height: 30px;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow:0 0 6px rgba(255,255,255,0.5);
+    transition:all 0.3s linear;
+}
+li i{
+    color:white;
+}
+.sidebar_menu .logo{
+    position:absolute;
+    width:100%;
+    top:10px;
+    line-height: 16px;
+    box-shadow:0 2px 4px rgba(255,255,255,0.5);
+    height:40px;
+}
+.sidebar_menu .logo a{
+    position:absolute;
+    color:white;
+    text-decoration:none;
+    left:50px;
+    font-weight: bold;
+    line-height: 20px;
+  
+}
+input[type=checkbox]
+{
+    display:none;
+}
+#check{
+    overflow: hidden;
+}
+.btn1 #btn,.btn2 #cancel{
+    position:absolute;
+    cursor:pointer;
+    font-weight:700;
+    color:white;
+    padding:10px;
+
+}
+.btn1 #btn{
+    position:absolute;
+    left:5px;
+    top:25px;
+}
+.btn2 #cancel{
+    position: absolute;
+    left:210px;
+    top:5px;
+    opacity:1;
+
+
+}
+   
+.main{
+    background-image:url("photo.jpg");
+    background-size:cover;
+    height:100vh;
+}
+.sidebar_menu .section{
+    position:absolute;
+    top:50px;    
+}
+.section li{
+    margin-top:10px;
+    padding:14px 55px;
+
+}
+.section li a{
+    color:rgba(255, 255, 255, 0.76);
+    text-decoration: none;;
+
+}
+.section li i{
+    padding-right: 10px;
+    color:rgba(255, 255, 255, 0.76);
+}
+.sidebar_menu .social{
+    position:fixed;
+    bottom:25px;
+    left:55px;
+}
+.sidebar_menu .social i{
+    color:rgba(255, 255, 255, 0.76);
+    opacity: 0.5;
+}
+.section li:hover,.sidebar_menu .logo a:hover{
+    box-shadow:0 0 6px rgba(255,255,255,0.5);
+   
+}
+#cancel i:hover,#btn i:hover{
+    font-size:30px;
+    transition:all 0.2s linear;
+}
+.sidebar_menu .social i:hover{
+    opacity:1;
+    transform:scale(1.1);
+}
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+#check:checked ~ .btn1 #btn i{
+    opacity:0;
+}
